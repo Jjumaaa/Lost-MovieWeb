@@ -2,6 +2,7 @@
 
 # Link
 https://lost-movieweb.vercel.app/
+https://jjumaaa.github.io/Lost-MovieWeb/
 
 ## 📌 Overview
 
