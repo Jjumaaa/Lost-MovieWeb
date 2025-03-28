@@ -533,12 +533,14 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    color: white;
 }
 
 .link-group h3 {
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
     position: relative;
+    color: white;
 }
 
 .link-group h3::after {
@@ -569,6 +571,7 @@ footer {
 .social-links {
     display: flex;
     gap: 1rem;
+    color: white;
 }
 
 .social-links a {
