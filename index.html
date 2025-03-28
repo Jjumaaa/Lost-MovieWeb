@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost MovieWeb | Discover Forgotten Cinema</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8E%AC%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Lost<span>MovieWeb</span></a>
+            <ul class="nav-links">
+                <li><a href="#featured">Featured</a></li>
+                <li><a href="#collections">Collections</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+                <button class="cta-button">Join Archive</button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Discover <span>Lost</span> Cinema</h1>
+            <p class="hero-subtitle">Unearth forgotten films that time tried to erase</p>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search lost films...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="number">1,247</span>
+                    <span class="label">Lost Films</span>
+                </div>
+                <div class="stat">
+                    <span class="number">83</span>
+                    <span class="label">Cursed Productions</span>
+                </div>
+                <div class="stat">
+                    <span class="number">42</span>
+                    <span class="label">Never Released</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll to Explore</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="featured" id="featured">
+        <div class="section-header">
+            <h2>Recently Rediscovered</h2>
+            <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="movie-carousel" id="movie-carousel">
+            <!-- Carousel items loaded via JS -->
+        </div>
+    </section>
+
+    <!-- Movie Grid -->
+    <section class="movie-grid" id="collections">
+        <div class="section-header">
+            <h2>The Lost Archives</h2>
+            <div class="filter-options">
+                <select id="year-filter">
+                    <option value="all">All Years</option>
+                    <option value="1920">1920s</option>
+                    <option value="1950">1950s</option>
+                    <option value="1980">1980s</option>
+                </select>
+                <select id="genre-filter">
+                    <option value="all">All Genres</option>
+                    <option value="horror">Horror</option>
+                    <option value="mystery">Mystery</option>
+                    <option value="experimental">Experimental</option>
+                </select>
+            </div>
+        </div>
+        <div class="grid-container" id="movie-container">
+            <!-- Movie cards loaded via JS -->
+        </div>
+        <button class="load-more" id="load-more">Load More Films</button>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Film Archive">
+            </div>
+            <div class="about-content">
+                <h2>About Lost MovieWeb</h2>
+                <p>We're a collective of film archivists, historians, and enthusiasts dedicated to preserving the memory of cinema that was nearly erased from history. Our mission is to document these forgotten works and share their stories.</p>
+                <div class="about-features">
+                    <div class="feature">
+                        <i class="fas fa-film"></i>
+                        <h3>Digital Preservation</h3>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-book"></i>
+                        <h3>Historical Research</h3>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-users"></i>
+                        <h3>Community Archive</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="newsletter-container">
+            <h2>Stay Updated on Rediscoveries</h2>
+            <p>Join our newsletter for weekly updates on newly uncovered films and restoration projects.</p>
+            <form id="newsletter-form">
+                <input type="email" id="newsletter-email" placeholder="Your email address">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="#">Lost<span>MovieWeb</span></a>
+                <p>Preserving cinema's forgotten treasures</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="#">Recently Added</a></li>
+                        <li><a href="#">Most Wanted</a></li>
+                        <li><a href="#">Director Index</a></li>
+                    </ul>
+                </div>
+                <div class="link-group">
+                    <h3>Community</h3>
+                    <ul>
+                        <li><a href="#">Forum</a></li>
+                        <li><a href="#">Contributions</a></li>
+                        <li><a href="#">Volunteer</a></li>
+                    </ul>
+                </div>
+                <div class="link-group">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">DMCA</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Lost MovieWeb. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
